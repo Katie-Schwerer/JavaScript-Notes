@@ -1,0 +1,9 @@
+* {
+    margin: auto 0;
+}
+
+rect, circle {
+    stroke: black;
+    stroke-width: 2px;
+    fill: pink;
+}
