@@ -27,15 +27,6 @@ function App() {
       <h1>Hello World</h1>
       <MapContainer center={[35.83432, -78.62809]} zoom={13}>
         <TileLayer attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"></TileLayer>
-        
-
-        {markers.map((marker, index) => (
-          <CircleMarker key={index} center={marker.geocode} radius={10} fillColor='blue' color="blue" fillOpacity={0.8}>
-            <Popup>
-              <p>{marker.popUp}</p>
-            </Popup>
-          </CircleMarker>
-        ))}
       </MapContainer>
     </div>
   );
